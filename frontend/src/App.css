@@ -1,0 +1,241 @@
+/* Modern Eye-Friendly Premium Theme */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  /* Dark Slate Matte Background - Eye Friendly */
+  background-color: #0f172a; 
+  color: #f1f5f9;
+}
+
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  background: linear-gradient(135deg, #28d8cd 0%, #5aecbb 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  font-size: 2.6rem;
+  font-weight: 700;
+  margin-bottom: 35px;
+}
+
+h1 .earth {
+  -webkit-text-fill-color: initial;
+  color: #1e88e5; /* nice blue */
+  margin-right: 8px;
+}
+
+/* Premium Card Design - Charcoal Tint */
+.form-card {
+  background: #1e293b;
+  padding: 32px;
+  border-radius: 16px;
+  border: 1px solid #334155;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  margin-bottom: 40px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 25px;
+}
+
+@media (max-width: 600px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-group label {
+  font-weight: 600;
+  color: #94a3b8;
+  font-size: 0.95rem;
+}
+
+/* Inputs styled for Dark Mode */
+.form-group input, .form-group select {
+  padding: 14px;
+  font-size: 1rem;
+  border: 1px solid #475569;
+  border-radius: 12px;
+  background-color: #0f172a;
+  color: #f8fafc;
+  transition: all 0.2s ease;
+}
+
+.form-group input::placeholder {
+  color: #64748b;
+}
+
+.form-group input:focus, .form-group select:focus {
+  outline: none;
+  border-color: #38bdf8;
+  box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.2);
+}
+
+/* Cyberpunk Gradient Button */
+.btn-submit {
+  width: 100%;
+  padding: 16px;
+  background: linear-gradient(135deg, #0284c7 0%, #4f46e5 100%);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(79, 70, 229, 0.3);
+  transition: all 0.2s ease;
+}
+
+.btn-submit:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(79, 70, 229, 0.4);
+}
+
+.btn-submit:disabled {
+  background: #334155;
+  color: #64748b;
+  box-shadow: none;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Response Section Styling */
+.result-card {
+  background: #1e293b;
+  padding: 32px;
+  border-radius: 16px;
+  border: 1px solid #334155;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.result-card h2 {
+  color: #f8fafc;
+  font-size: 1.8rem;
+  margin-top: 0;
+}
+
+.summary-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 20px 0;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #334155;
+}
+
+.badge {
+  background: #0f172a;
+  color: #38bdf8;
+  border: 1px solid #38bdf8;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.badge.cost {
+  color: #4ade80;
+  border-color: #4ade80;
+}
+
+/* Horizontal Day Tabs Styling */
+.day-buttons {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  padding: 8px 0;
+  margin-bottom: 25px;
+}
+
+.day-btn {
+  padding: 12px 24px;
+  background: #334155;
+  color: #94a3b8;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.day-btn:hover {
+  background: #475569;
+  color: #f1f5f9;
+}
+
+.day-btn.active {
+  background: #38bdf8;
+  color: #0f172a;
+  box-shadow: 0 4px 12px rgba(56, 189, 248, 0.3);
+}
+
+/* Day Itinerary Box */
+.day-content {
+  background: #0f172a;
+  padding: 24px;
+  border-radius: 12px;
+  border-left: 5px solid #38bdf8;
+  border-top: 1px solid #334155;
+  border-right: 1px solid #334155;
+  border-bottom: 1px solid #334155;
+}
+
+.day-content h3 {
+  color: #f8fafc;
+  margin-top: 0;
+}
+
+.activities-list {
+  padding-left: 20px;
+  margin: 18px 0;
+  color: #cbd5e1;
+}
+
+.activities-list li {
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+/* Special Tips Section */
+.tips-section {
+  margin-top: 35px;
+  padding-top: 25px;
+  border-top: 1px solid #334155;
+}
+
+.tips-section h3 {
+  color: #f8fafc;
+}
+
+.tips-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.tips-list li {
+  background: rgba(251, 146, 60, 0.1);
+  border-left: 4px solid #fb923c;
+  color: #fed7aa;
+  padding: 14px;
+  margin-bottom: 12px;
+  border-radius: 0 12px 12px 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
