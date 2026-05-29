@@ -17,11 +17,11 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-node-version: "20"
+          node-version: "20" # 👈 Yahan pehle node-node-version likha tha, use sahi kiya
 
       - name: Install & Build Frontend
         run: |
-          cd frontend
+          cd frontend # 👈 Aapke folder ke naam ke mutabik ekdum sahi hai
           npm install
           npm run build
 
