@@ -58,7 +58,7 @@ function App() {
               <label>Where do you want to go?</label>
               <input
                 type="text"
-                placeholder="e.g. Manali, Goa, Paris"
+                placeholder="Enter a city or country "
                 value={destination}
                 onChange={(e) => setDestination(e.target.value)}
               />
